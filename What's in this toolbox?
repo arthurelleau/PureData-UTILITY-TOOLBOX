@@ -1,0 +1,8 @@
+# PureData-Utility-Toolbox
+A bunch of basic tools for PD Vanilla, Extented, PurrData and L2Ork
+
+The purpose is to propose very basic utilities in order to have a nice and multitask toolbox.
+I'll try to make the patches working for all the versions, however, GUI and object's formats might sometime create some damages as I mostly work in PurrData.
+Toolbox might evolve in special versions oriented patches in order to explore the possibilities of PD's different flavours, therefor, I will put the version into parenthesis after the name of the patch.
+
+Enjoy the toolbox and do not hesitate to take contact with me for anything, requests or debuging !
