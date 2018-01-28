@@ -1,4 +1,4 @@
-#N canvas 0 50 1905 1019 10;
+#N canvas -9 -9 1920 1026 10;
 #N canvas 0 50 1905 1019 dsponofftoggle 0;
 #X obj 184 97 tgl 15 0 empty empty I 4 6 0 10 -66577 -66577 -262144
 1 1;
@@ -17,7 +17,7 @@
 #X coords 0 -1 1 1 99 17 2 183 96;
 #X restore 12 27 pd dsponofftoggle;
 #N canvas 0 50 1905 1019 opensettingsbutton 0;
-#X obj 101 101 tgl 15 0 openclose close open settings 17 7 0 10 -262144
+#X obj 101 101 tgl 15 0 empty empty open_settings 17 7 0 10 -262144
 -1 -1 0 1;
 #N canvas 958 84 818 335 settings 0;
 #X obj 83 62 tgl 15 0 empty dsponoff empty 17 7 0 10 -262144 -1 -1
@@ -2086,6 +2086,10 @@ into the patch and route the physical outputs with this matrix;
 #X connect 22 0 7 6;
 #X connect 23 0 7 7;
 #X restore 111 120 pd settings;
+#X obj 101 68 r close;
+#X obj 101 151 s openclose;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
 #X coords 0 -1 1 1 99 17 2 100 100;
 #X restore 12 10 pd opensettingsbutton;
 #X obj 12 99 throw~ o1;
