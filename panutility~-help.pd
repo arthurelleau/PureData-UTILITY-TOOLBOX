@@ -1,0 +1,26 @@
+#N canvas 727 359 432 542 10;
+#X obj 167 216 panutility~;
+#X text 131 9 panutility~ help;
+#X text 60 50 panutility is an abstraction made with really basic maths
+objects in order to have a stereo panoramic tool.;
+#X msg 143 112 -1;
+#X msg 203 112 1;
+#X msg 173 112 0;
+#X obj 182 266 dac~;
+#X obj 295 169 osc~ 460;
+#X obj 255 149 osc~ 420;
+#X obj 7 153 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5550 1;
+#X text 76 359 inlet 1 \; numbers from -1 to 1 as LEFT and RIGHT sides
+;
+#X text 76 399 inlet 2/3 \;  audio in for LEFT and RIGHT sides,
+f 50;
+#X text 75 447 outlet 1/2 \; audio out for LEFT and RIGHT sides;
+#X connect 0 0 6 0;
+#X connect 0 1 6 1;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 7 0 0 2;
+#X connect 8 0 0 1;
+#X connect 9 0 0 0;
